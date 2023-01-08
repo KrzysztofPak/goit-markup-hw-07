@@ -43,8 +43,8 @@
 }
 
 button.modal-close-btn:hover {
-    background-color: var(--main-color);
-    color: white;
+    background-color: $BlueColor;
+    color: $WhiteColor;
   }
   
 .modal-backdrop.is-hidden .modal-box {
