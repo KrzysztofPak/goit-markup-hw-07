@@ -76,12 +76,9 @@
     cursor: pointer;
     position: relative;
     overflow: hidden;
-}
-
-.portfolio figcaption {
-    border-right: 1px solid $Gray-icons-color;
-    border-left: 1px solid $Gray-icons-color;
-    border-bottom: 1px solid $Gray-icons-color;
+    border-right: 1px solid $Portfolio-figcaption-color;
+    border-left: 1px solid $Portfolio-figcaption-color;
+    border-bottom: 1px solid $Portfolio-figcaption-color;
 }
 
 .img-box {
