@@ -23,6 +23,7 @@
 /* HEADER - LOGO */
 
 .logo {
+    color: $BlueColor;
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
@@ -30,14 +31,19 @@
     text-decoration: none;
     margin-right: 93px;
     padding: 24px 0 25px;
-}
 
-.logo--blue {
-    color: $BlueColor;
-}
+    &--highlighted {
+        color: $BlackColor;
+    }
 
-.logo--black {
-    color: $BlackColor;
+    &:before {
+        content: "Web";
+        color: $BlueColor;
+    }
+
+    &:after {
+        content: "Studio"
+    }
 }
 
 .logo--white {
@@ -83,9 +89,11 @@
     position: relative;
 }
 
-.navigation__link--active {
+.navigation {
+  &__link {
+    @extend .transition;
     color: $BlueColor !important;
-
+  }
     &::after {
         content: '';
         position: absolute;
@@ -97,10 +105,7 @@
         background-color: $BlueColor;
         pointer-events: none;
     }
-}
-
-.navigation__link--transition {
-    transition: $TransitionSet;
+    &.link--active {color: $BlueColor !important;}
 }
 
 /* HEADER - CONTACT */

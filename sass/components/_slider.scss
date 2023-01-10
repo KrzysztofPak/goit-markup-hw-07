@@ -1,11 +1,11 @@
-.slider {
+.slider__bg {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.slider__bg {
+.slider {
     margin: 0 auto;
     background: $BgSlider;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/background-2.jpg');
