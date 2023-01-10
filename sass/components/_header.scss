@@ -31,18 +31,9 @@
   margin-right: 93px;
   padding: 24px 0 25px;
 
-  &--highlighted {
-    color: $BlackColor;
-  }
-
-  &:before {
-    content: "Web";
-    color: $BlueColor;
-  }
-
-  &:after {
-    content: "Studio";
-  }
+    &__color  {
+        color: $BlackColor;
+    }
 }
 
 .logo--white {
