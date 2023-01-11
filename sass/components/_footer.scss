@@ -4,20 +4,22 @@
 
 .footer {
   padding: 60px 0;
-  &__join-us__box {
+}
+  
+.footer__join-us__box {
     width: 206px;
     height: 80px;
     padding-top: 12px;
     margin-left: 70px;
   }
-  &__join-us__heading {
+
+.footer__join-us__heading {
     margin-bottom: 20px;
     text-transform: uppercase;
     font-weight: 700;
     font-size: 14px;
     color: $WhiteColor;
   }
-}
 
 .footer a {
   text-decoration: none;
