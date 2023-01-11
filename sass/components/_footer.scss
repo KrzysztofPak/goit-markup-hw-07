@@ -4,16 +4,53 @@
 
 .footer {
   padding: 60px 0;
-}
-  
-.footer__join-us__box {
+
+  &__bg {
+    background: $FooterBG;
+  }
+
+  &__adress {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    padding-top: 20px;
+  }
+
+  &__location {
+    font-weight: bold;
+    color: $WhiteColor;
+    transition: color $TransitionSet;
+
+    &:hover,
+    &:focus {
+      color: $BlueColor;
+    }
+  }
+
+  &__contact {
+    margin-top: 9px;
+    color: $Footer-contact;
+    transition: color $TransitionSet;
+    text-decoration: none;
+    display: flex;
+    padding: 0px;
+
+    &:hover,
+    &:focus {
+      color: $BlueColor;
+    }
+  }
+
+  &__join-us__box {
     width: 206px;
     height: 80px;
     padding-top: 12px;
     margin-left: 70px;
   }
 
-.footer__join-us__heading {
+  &__join-us__heading {
     margin-bottom: 20px;
     text-transform: uppercase;
     font-weight: 700;
@@ -21,141 +58,77 @@
     color: $WhiteColor;
   }
 
-.footer a {
-  text-decoration: none;
-  display: flex;
-  padding: 0px;
-}
-
-.footer__bg {
-  background: $FooterBG;
-}
-
-.footer__adress {
-  font-style: normal;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-  text-decoration: none;
-  padding-top: 20px;
-}
-
-.footer__location {
-  font-weight: bold;
-  color: $WhiteColor;
-  transition: color $TransitionSet;
-
-  &:hover,
-  &:focus {
-    color: $BlueColor;
-  }
-}
-
-.footer__contact {
-  margin-top: 9px;
-  color: $Footer-contact;
-  transition: color $TransitionSet;
-  text-decoration: none;
-
-  &:hover,
-  &:focus {
-    color: $BlueColor;
-  }
-}
-
-.footer__social-icons {
-  display: flex;
-  gap: 10px;
-}
-
-.footer__social-icon-svg {
-  fill: $WhiteColor;
-  margin: 12px;
-}
-
-.footer__social-icon-bg {
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.1);
-  width: 44px;
-  height: 44px;
-  transition: background-color $TransitionSet;
-
-  &:hover,
-  &:focus {
-    border-radius: 50%;
-    background-color: $BlueColor;
-    width: 44px;
-    height: 44px;
+  &__social-icons {
+    display: flex;
     gap: 10px;
-    cursor: pointer;
   }
-}
 
-.footer__newsletter {
-  width: 570px;
-  height: 86px;
-  margin-left: 78px;
-  margin-top: 12px;
-}
+  &__newsletter {
+    width: 570px;
+    height: 86px;
+    margin-left: 78px;
+    margin-top: 12px;
+  }
 
-.footer__sub-box {
-  display: flex;
-}
+  &__sub-box {
+    display: flex;
+  }
 
-.footer__newsletter h3 {
-  text-transform: uppercase;
-  font-weight: 700;
-  font-style: bold;
-  font-size: 14px;
-  line-height: 16px;
-  color: $WhiteColor;
-  margin-bottom: 20px;
-}
+  &__button-subscribe {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    border: none;
+    border-radius: 4px;
+    background-color: $BlueColor;
+    margin-left: 12px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    padding: 0px 28px 0px 42px;
+    gap: 24px;
+    transition: background-color $TransitionSet;
 
-.footer__form-sub {
-  width: 358px;
-  height: 50px;
-  background-color: transparent;
-  border-radius: 4px;
-  border-color: rgba(255, 255, 255, 0.3);
-  color: rgba(255, 255, 255, 0.6);
-  padding-left: 16px;
+    &:hover,
+    &:focus {
+      background-color: rgba(255, 255, 255, 0.1);
+      cursor: pointer;
+    }
+  }
 
-  &::placeholder {
+  &__sub-button-text {
     font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: 0.06em;
+    color: $WhiteColor;
+  }
+
+  &__icon-send-sub {
+    fill: $WhiteColor;
+  }
+
+  &__form-sub {
+    width: 358px;
+    height: 50px;
+    background-color: transparent;
+    border-radius: 4px;
+    border-color: rgba(255, 255, 255, 0.3);
     color: rgba(255, 255, 255, 0.6);
     padding-left: 16px;
+
+    &::placeholder {
+      font-size: 16px;
+      color: rgba(255, 255, 255, 0.6);
+      padding-left: 16px;
+    }
   }
-}
 
-.footer__button-subscribe {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 50px;
-  border: none;
-  border-radius: 4px;
-  background-color: $BlueColor;
-  margin-left: 12px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  padding: 0px 28px 0px 42px;
-  gap: 24px;
-  transition: background-color $TransitionSet;
-
-  &:hover,
-  &:focus {
-    background-color: rgba(255, 255, 255, 0.1);
-    cursor: pointer;
+  &__title-newsletter {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-style: bold;
+    font-size: 14px;
+    line-height: 16px;
+    color: $WhiteColor;
+    margin-bottom: 20px;
   }
-}
-
-.footer__sub-button-text {
-  font-size: 16px;
-  line-height: 1.875;
-  letter-spacing: 0.06em;
-  color: $WhiteColor;
-}
-
-.footer__icon-send-sub {
-  fill: $WhiteColor;
 }
