@@ -29,12 +29,11 @@
     text-decoration: none;
     margin-right: 93px;
     padding: 24px 0 25px;
-      &__blue {
-        color: $BlueColor;
-      }
-      &__highlighted  {
-          color: $BlackColor;
-      }
+    color: $BlueColor;
+
+    &__highlighted  {
+      color: $BlackColor;
+    }
   }
   
   .logo--white {
